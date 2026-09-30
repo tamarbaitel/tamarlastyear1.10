@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="שלום!"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tvStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="משימות: 0"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="אין משימות"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_margin="15dp"/>
+
+    <ListView
+        android:id="@+id/lvTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="הוספת משימה"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="יציאה"/>
+
+</LinearLayout>
